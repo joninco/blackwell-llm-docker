@@ -6,6 +6,7 @@ Docker images for LLM inference on NVIDIA Blackwell GPUs (SM120).
 
 | Image | Dockerfile | Stack |
 |-------|-----------|-------|
+| `joninco/vllm:glm53-b12x686450b7-vllm84baaf76fc-r27` | [GLM-5.3 fork build recipe](glm53/README.md) | joninco b12x `master` and vLLM `dev/jovian-judgement` on the pinned CUDA 13.3 r27 runtime; DCP=1/MTP=3 smoke checks passed |
 | `voipmonitor/sglang:cu130` | `Dockerfile.sglang-cu130` | CUDA 13.0, torch 2.11 stable cu130, FlashInfer source (PR #2913), SGLang + b12x + PCIe allreduce |
 | `voipmonitor/sglang:cu132` | `Dockerfile.sglang-cu132` | CUDA 13.2, torch 2.12 from source, FlashInfer source (PR #2913), SGLang + b12x |
 | `voipmonitor/vllm:cu130` | `Dockerfile.vllm-cu130` | CUDA 13.0, torch 2.11 stable cu130, FlashInfer source (PR #2913), vLLM + cherry-picks |
