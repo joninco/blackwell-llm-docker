@@ -1,8 +1,13 @@
 {
   "published_image": {
+    "build": "glm53/build.py --branch-heads; the resolved branch heads equal the pinned revisions in sources.lock.json",
+    "local_image_id": "sha256:763f2bddf5d628d4f14267b44d646fb84d9251065b552132d7c38865ebccd037",
     "public_registry_lookup": "passed",
-    "registry_digest": "sha256:902804b506d0b56e7b6d3889e9e5f806001a38308edbdc8514b94740b995d0d1",
-    "tag": "joninco/vllm:glm53-b12x686450b7-vllm84baaf76fc-r27"
+    "registry_digest": "sha256:763f2bddf5d628d4f14267b44d646fb84d9251065b552132d7c38865ebccd037",
+    "runtime_files": 8096,
+    "runtime_inventory_sha256": "adca04e511333f232d6cf99ad644921f30ec1f1a4252ff31e8cbecbe47445042",
+    "source_key": "a7a133d8ada9a211b476f213251cf7077e931324a4fcf4b5376624cd536c3877",
+    "tag": "joninco/vllm:glm53-b12x686450b7-vllm5b28d30b59-r27"
   },
   "published_image_serving_checks": {
     "decode_checks": [
@@ -14,10 +19,10 @@
           "vllm:generation_tokens_total": 512.0,
           "vllm:num_preemptions_total": 0.0,
           "vllm:request_decode_time_seconds_count": 1.0,
-          "vllm:request_decode_time_seconds_sum": 2.8966670208610594,
-          "vllm:spec_decode_num_accepted_tokens_total": 286.0,
-          "vllm:spec_decode_num_draft_tokens_total": 675.0,
-          "vllm:spec_decode_num_drafts_total": 225.0
+          "vllm:request_decode_time_seconds_sum": 2.812713854946196,
+          "vllm:spec_decode_num_accepted_tokens_total": 294.0,
+          "vllm:spec_decode_num_draft_tokens_total": 654.0,
+          "vllm:spec_decode_num_drafts_total": 218.0
         },
         "long_context": false,
         "peak_requests_running": 1.0,
@@ -35,10 +40,10 @@
           "vllm:generation_tokens_total": 2048.0,
           "vllm:num_preemptions_total": 0.0,
           "vllm:request_decode_time_seconds_count": 4.0,
-          "vllm:request_decode_time_seconds_sum": 18.947832645382732,
-          "vllm:spec_decode_num_accepted_tokens_total": 1221.0,
-          "vllm:spec_decode_num_draft_tokens_total": 2484.0,
-          "vllm:spec_decode_num_drafts_total": 828.0
+          "vllm:request_decode_time_seconds_sum": 19.674774834886193,
+          "vllm:spec_decode_num_accepted_tokens_total": 1180.0,
+          "vllm:spec_decode_num_draft_tokens_total": 2604.0,
+          "vllm:spec_decode_num_drafts_total": 868.0
         },
         "long_context": false,
         "peak_requests_running": 4.0,
@@ -59,10 +64,10 @@
           "vllm:generation_tokens_total": 4096.0,
           "vllm:num_preemptions_total": 0.0,
           "vllm:request_decode_time_seconds_count": 8.0,
-          "vllm:request_decode_time_seconds_sum": 63.713238157564774,
-          "vllm:spec_decode_num_accepted_tokens_total": 2408.0,
-          "vllm:spec_decode_num_draft_tokens_total": 5070.0,
-          "vllm:spec_decode_num_drafts_total": 1690.0
+          "vllm:request_decode_time_seconds_sum": 61.20123892556876,
+          "vllm:spec_decode_num_accepted_tokens_total": 2423.0,
+          "vllm:spec_decode_num_draft_tokens_total": 5004.0,
+          "vllm:spec_decode_num_drafts_total": 1668.0
         },
         "long_context": false,
         "peak_requests_running": 8.0,
@@ -87,10 +92,10 @@
           "vllm:generation_tokens_total": 8192.0,
           "vllm:num_preemptions_total": 0.0,
           "vllm:request_decode_time_seconds_count": 16.0,
-          "vllm:request_decode_time_seconds_sum": 177.95407848851755,
-          "vllm:spec_decode_num_accepted_tokens_total": 4795.0,
-          "vllm:spec_decode_num_draft_tokens_total": 10191.0,
-          "vllm:spec_decode_num_drafts_total": 3397.0
+          "vllm:request_decode_time_seconds_sum": 174.13742654398084,
+          "vllm:spec_decode_num_accepted_tokens_total": 4852.0,
+          "vllm:spec_decode_num_draft_tokens_total": 10023.0,
+          "vllm:spec_decode_num_drafts_total": 3341.0
         },
         "long_context": false,
         "peak_requests_running": 16.0,
@@ -123,10 +128,10 @@
           "vllm:generation_tokens_total": 512.0,
           "vllm:num_preemptions_total": 0.0,
           "vllm:request_decode_time_seconds_count": 1.0,
-          "vllm:request_decode_time_seconds_sum": 2.897827443201095,
-          "vllm:spec_decode_num_accepted_tokens_total": 292.0,
-          "vllm:spec_decode_num_draft_tokens_total": 660.0,
-          "vllm:spec_decode_num_drafts_total": 220.0
+          "vllm:request_decode_time_seconds_sum": 2.9375680731609464,
+          "vllm:spec_decode_num_accepted_tokens_total": 288.0,
+          "vllm:spec_decode_num_draft_tokens_total": 669.0,
+          "vllm:spec_decode_num_drafts_total": 223.0
         },
         "long_context": true,
         "peak_requests_running": 1.0,
@@ -140,6 +145,8 @@
     "generated_tokens": 15360,
     "health": "healthy",
     "http_health": 200,
+    "kernel_journal_fault_lines": 0,
+    "launch": "glm53/compose.json unchanged, GLM53_IMAGE set to the published tag, fresh compile-cache and container-tmp volumes",
     "maximum_tested_prompt_tokens": 30989,
     "parallelism": {
       "dcp": 1,
@@ -150,21 +157,27 @@
     "requests_completed": 30,
     "restart_count": 0,
     "server_fault_lines": 0,
-    "verified_at": "2026-09-15T16:27:36.397160+00:00"
+    "verified_at": "2026-09-17T13:32:22.717919+00:00",
+    "weight_loading": {
+      "draft_loading_weights_line": "Loading weights took 1.10 seconds",
+      "draft_shard_filter_line": "Safetensors index filter selected 1/85 checkpoint shards.",
+      "model_loading_line": "Model loading took 57.53 GiB memory and 49.716688 seconds",
+      "target_loading_weights_line": "Loading weights took 23.70 seconds"
+    }
   },
   "recipe_checks": {
-    "compose_cli_flags_match": true,
     "compose_config_parse": "passed",
-    "compose_serving_environment_matches_except_model_mount_path": true,
-    "native_input_guard_examples": "Native CUDA/Rust/build/dependency changes rejected; package Python changes permitted",
+    "compose_used_unchanged_for_serving_checks": true,
+    "native_input_guard": "Native CUDA/Rust/build/dependency changes rejected; package Python changes permitted",
     "pinned_export_matches_published_runtime_inventory": true,
     "pinned_rebuild_cpu_imports": "passed"
   },
   "recipe_rebuild": {
     "gpu_inference_performed_on_recipe_rebuild": false,
-    "local_image_id": "sha256:3cf23eb24898118b11d96725ecba90b6f3a67c6ab513f727b20669c7d55444f8",
-    "mode": "--branch-heads; resolved revisions equal the pinned published revisions",
+    "local_image_id": "sha256:a1fd7320e1c726c948a57bf0886840de456c3d07914614a93c777023c736b525",
+    "mode": "pinned sources.lock.json revisions (no --branch-heads) after publication",
     "published_image_environment_and_entrypoint_match": true,
+    "published_labels_match_except_image_version": true,
     "published_native_library_hashes_match": true,
     "published_runtime_package_versions_match": true,
     "runtime_verification": {
@@ -188,19 +201,19 @@
         "triton": "3.7.1+gitf797708c.nv26.7",
         "vllm": "0.26.1rc0+glm53.flash.nvfp4.luke.clean.r1.vllme75bcfd.b12x58a046f"
       },
-      "runtime_files": 8095,
-      "runtime_inventory_sha256": "630b37cf9ac7da318c108c12dd727d406c7f9c9d36f66dee4e7dd1fcdd59e977",
+      "runtime_files": 8096,
+      "runtime_inventory_sha256": "adca04e511333f232d6cf99ad644921f30ec1f1a4252ff31e8cbecbe47445042",
       "scope": "Source/native identities and CPU imports; no GPU inference",
       "status": "passed",
       "torch_cuda": "13.3"
     },
-    "source_key": "bf22514b2ec4de4fa972e77f7ea1694b58e70d5bd094ae8445c0535da30a1c59"
+    "source_key": "a7a133d8ada9a211b476f213251cf7077e931324a4fcf4b5376624cd536c3877"
   },
   "schema_version": 1,
   "source_commits": {
     "b12x": "686450b72a5665ebeeb571ed5c1729b190a829da",
-    "vllm": "84baaf76fcbd83aa72edd50188aa351ed6eab36b"
+    "vllm": "5b28d30b59b0973743ab0a171eee10fce72ddf3f"
   },
   "status": "implemented; functional smoke checks passed; performance and numerical qualification are research-only",
-  "verified_at": "2026-09-15T17:34:54.637552+00:00"
+  "verified_at": "2026-09-17T13:34:52.874026+00:00"
 }

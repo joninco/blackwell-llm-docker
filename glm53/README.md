@@ -13,19 +13,25 @@ Jovian Judgement r27 foundation. Model weights are external to the image.
 ## Pull the published image
 
 ```bash
-docker pull joninco/vllm:glm53-b12x686450b7-vllm84baaf76fc-r27
+docker pull joninco/vllm:glm53-b12x686450b7-vllm5b28d30b59-r27
 ```
 
 The registry digest identifies the exact published artifact:
 
 ```bash
-docker pull joninco/vllm@sha256:902804b506d0b56e7b6d3889e9e5f806001a38308edbdc8514b94740b995d0d1
+docker pull joninco/vllm@sha256:763f2bddf5d628d4f14267b44d646fb84d9251065b552132d7c38865ebccd037
 ```
 
 | Source | Commit | Git tree |
 | --- | --- | --- |
 | b12x `master` | `686450b72a5665ebeeb571ed5c1729b190a829da` | `e0a9f13abd34fcf0ce560ce21c637b02a368d068` |
-| vLLM `dev/jovian-judgement` | `84baaf76fcbd83aa72edd50188aa351ed6eab36b` | `f01326635f56cc544d37fafed53f512150c08589` |
+| vLLM `dev/jovian-judgement` | `5b28d30b59b0973743ab0a171eee10fce72ddf3f` | `3b6790fd16c6a4949b6924be820cd0cedaae0065` |
+
+The vLLM source declares the draft model's checkpoint name prefixes, so the
+loader opens only the shard that holds the multi-token-prediction layer and
+reads the checkpoint once at startup. The smoke-checked launch logged
+`Safetensors index filter selected 1/85 checkpoint shards` and a 1.1 s
+draft-weight pass after the 23.7 s target-weight pass.
 
 ## Build the pinned sources
 
@@ -41,7 +47,7 @@ uv run --no-project --python 3.12 glm53/build.py
 ```
 
 The default tag is
-`joninco/vllm:glm53-b12x686450b7-vllm84baaf76fc-r27-local`.
+`joninco/vllm:glm53-b12x686450b7-vllm5b28d30b59-r27-local`.
 The default output directory, `glm53/build/`, must not already exist. Use
 `--output` with another absent directory for a separate build; use `--tag`
 to choose a local image name. The script builds and verifies locally. Registry
@@ -66,11 +72,11 @@ The output directory contains `resolved-sources.json`, `context/`,
 The image embeds its source manifest and runtime inventory under
 `/opt/glm53-flash/qualification/`.
 
-The pinned rebuild must match all 8,095 source/native files in the published
+The pinned rebuild must match all 8,096 source/native files in the published
 image, including ten shared libraries. Its source fingerprint is
-`bf22514b2ec4de4fa972e77f7ea1694b58e70d5bd094ae8445c0535da30a1c59`;
+`a7a133d8ada9a211b476f213251cf7077e931324a4fcf4b5376624cd536c3877`;
 its complete runtime inventory digest is
-`630b37cf9ac7da318c108c12dd727d406c7f9c9d36f66dee4e7dd1fcdd59e977`.
+`adca04e511333f232d6cf99ad644921f30ec1f1a4252ff31e8cbecbe47445042`.
 Image digests can differ because recipe metadata, build provenance, and layer
 packaging differ. Pull by registry digest to obtain the exact published image.
 

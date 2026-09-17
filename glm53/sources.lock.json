@@ -2,10 +2,10 @@
   "base_image": "voipmonitor/vllm@sha256:a298fe1cd207eaf97bd2ff2686716ed25b7009c09b36650eba732a4a7dc51512",
   "native_inventory_sha256": "c9ed5e5e8c023ed8dccc72b1bf2e9c9ca0f7841d54f39281919e1bd57f3098cb",
   "native_package_root": "/opt/venv/lib/python3.12/site-packages/vllm",
-  "published_digest": "sha256:902804b506d0b56e7b6d3889e9e5f806001a38308edbdc8514b94740b995d0d1",
-  "published_image": "joninco/vllm:glm53-b12x686450b7-vllm84baaf76fc-r27",
-  "published_runtime_inventory_sha256": "630b37cf9ac7da318c108c12dd727d406c7f9c9d36f66dee4e7dd1fcdd59e977",
-  "published_source_key": "bf22514b2ec4de4fa972e77f7ea1694b58e70d5bd094ae8445c0535da30a1c59",
+  "published_digest": "sha256:763f2bddf5d628d4f14267b44d646fb84d9251065b552132d7c38865ebccd037",
+  "published_image": "joninco/vllm:glm53-b12x686450b7-vllm5b28d30b59-r27",
+  "published_runtime_inventory_sha256": "adca04e511333f232d6cf99ad644921f30ec1f1a4252ff31e8cbecbe47445042",
+  "published_source_key": "a7a133d8ada9a211b476f213251cf7077e931324a4fcf4b5376624cd536c3877",
   "schema_version": 1,
   "sources": {
     "b12x": {
@@ -18,9 +18,9 @@
     },
     "vllm": {
       "branch": "dev/jovian-judgement",
-      "commit": "84baaf76fcbd83aa72edd50188aa351ed6eab36b",
+      "commit": "5b28d30b59b0973743ab0a171eee10fce72ddf3f",
       "native_compatible_commit": "8d66b502b7b4f58e505c6de2a5ea9857b4b7715c",
-      "tree": "f01326635f56cc544d37fafed53f512150c08589",
+      "tree": "3b6790fd16c6a4949b6924be820cd0cedaae0065",
       "upstream_base": "3aada67721bfdb8b98355207ca3780bb32e6f434",
       "url": "https://github.com/joninco/vllm.git"
     }

@@ -103,7 +103,7 @@
         "retries": 10,
         "start_period": "20m0s"
       },
-      "image": "${GLM53_IMAGE:-joninco/vllm@sha256:902804b506d0b56e7b6d3889e9e5f806001a38308edbdc8514b94740b995d0d1}",
+      "image": "${GLM53_IMAGE:-joninco/vllm@sha256:763f2bddf5d628d4f14267b44d646fb84d9251065b552132d7c38865ebccd037}",
       "init": true,
       "ipc": "host",
       "network_mode": "host",
